@@ -1,17 +1,18 @@
 import mongoose from 'mongoose'
 import app from './app'
-
-const PORT = 852000
+import config from './config'
 
 async function connect() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/test')
+    await mongoose.connect(config.database_url as string)
     console.log('Database connected')
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`)
+    app.listen(config.port, () => {
+      console.log(`Application  is running on http://localhost:${config.port}`)
     })
   } catch (error) {
     console.log('Database connection failed')
   }
 }
+
+connect()
