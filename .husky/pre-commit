@@ -1,2 +1,4 @@
- 
- yarn lint:check
+
+
+yarn test
+yarn lint:check
