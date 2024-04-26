@@ -6,6 +6,12 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.get('/res', (req: Request, res: any) => {
+  res.send('Working sucessfly ')
+})
+app.get('/sedrf', (req: any, res: any) => {
+  res.send('Working sucessfly ')
+})
 app.get('/', (req: Request, res: any) => {
   res.send('Working sucessfly ')
 })
