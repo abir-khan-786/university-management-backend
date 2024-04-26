@@ -10,7 +10,7 @@ app.get('/res', (req: Request, res: any) => {
   res.send('Working sucessfly ')
 })
 app.get('/', (req: Request, res: any) => {
-  res.send('Backend Working sucessfly ')
+  res.send('Backend Working   ')
 })
 
 export default app
