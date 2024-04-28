@@ -35,7 +35,7 @@
     "mongoose": "^8.3.2"
   },
   "lint-staged": {
-    "src/**/*{js,ts}": [
+    "src/**/*{.js,.ts}": [
       "yarn lint-prettier"
     ]
   }
