@@ -10,7 +10,7 @@
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint-prettier": "yarn run lint:check && yarn run prettier:check"
+    "lint-prettier": "yarn lint:check && yarn prettier:check"
   },
   "author": "abir-khan032201",
   "license": "ISC",
