@@ -1,4 +1,23 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
  
-yarn lint:check
+yarn test
+ 
+ 
+ 3. Add a new script to your package.json file 
+ Add a new script to your package.json file to run the tests. 
+ {
+  "scripts": {
+    "lint:chcek": "eslint --ignore-path .eslintignore --ext .js,.ts"
+  }
+
+ 
+ 
+ 4. Run the tests 
+ Run the tests to make sure everything is working as expected. 
+ yarn test
+ 
+ 
+ 5. Commit the changes 
+ Commit the changes to your repository. 
+ git add .
