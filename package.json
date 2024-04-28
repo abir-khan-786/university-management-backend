@@ -33,10 +33,5 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.3.2"
-  },
-  "lint-staged": {
-    " src/**/*.{js,ts}": [
-      "yarn lint-prettier"
-    ]
   }
 }
